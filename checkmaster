@@ -1,0 +1,8 @@
+node{
+    stage("checkout"){
+        git "https://github.com/hujth6/project1jenkins.git"
+    }
+    stage("play"){
+        sh "mv myapp.py ~/Desktop"
+    }
+}
