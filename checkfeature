@@ -1,0 +1,9 @@
+node{
+    stage("checkout"){
+        git branch: 'feature*', url: 'https://github.com/hujth6/project1jenkins.git'
+    }
+    stage("run"){
+        sh "echo running"
+        sh "python3 myapp.py"
+    }
+}
